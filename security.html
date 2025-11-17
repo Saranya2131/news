@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+<title></title>
+<style>
+.p1{
+   font-size:22px;
+   }
+</head></style>
+<body>
+<h2 align="center"><b>PYTHON SECURITY TIPS</b></h2>
+<p class="p1">
+<b>1. Input Validation and Sanitization:</b><br>
+Always validate and sanitize all external data, including user inputs, API responses, and file uploads, to prevent injection 
+attacks (e.g., SQL injection, XSS). Avoid using eval(), exec(), or os.system() with untrusted input due to 
+inherent security risks.<br><br>
+
+<b>2. Dependency Management:</b><br>
+Keep Python and all installed libraries updated to the latest stable versions to benefit from security patches.
+Use tools like pip-audit or safety to scan for known vulnerabilities in your project's dependencies. 
+Minimize the number of dependencies to reduce the potential attack surface.<br><br>
+
+<b>3. Secure Handling of Secrets:</b><br>
+Never hardcode sensitive information like API keys, database credentials, or cryptographic keys directly in your code.
+Utilize environment variables or dedicated secret management tools for storing and retrieving secrets securely.<br><br>
+
+<b>4. Authentication and Authorization:</b><br>
+Implement strong authentication mechanisms and robust authorization controls to ensure only authorized users and processes 
+can access sensitive resources. Use secure libraries for password hashing (e.g., bcrypt, argon2-cffi) and secure
+session management (e.g., Flask-Login).<br><br>
+
+<b>5. Secure File Operations:</b><br>
+When handling file uploads, validate file types (using MIME types, not just extensions), sanitize filenames, 
+and store uploads outside the application's root directory. Implement size limits for uploaded files to prevent 
+Denial-of-Service (DoS) attacks.<br><br>
+
+<b>6. Error Handling and Logging:</b><br>
+Implement proper error handling to avoid revealing sensitive information in error messages to users.
+Log detailed errors internally for debugging. Be mindful of what information is logged to prevent 
+inadvertently exposing secrets.<br><br>
+
+<b>7. Secure Transmission and Encryption:</b><br>
+Use secure protocols like HTTPS for data transmission over networks.Encrypt sensitive data at rest using
+libraries like cryptography when storing it.<br><br>
+
+<b>8. Code Security Analysis:</b><br>
+Regularly perform static analysis of your code using tools like Bandit to identify potential security vulnerabilities.
+Conduct code reviews to catch security flaws early in the development cycle.<br><br>
+
+<b>9. Least Privilege Principle:</b><br>
+Grant the minimum necessary permissions to users and processes to perform their intended functions, limiting potential
+damage in case of a breach.<br><br>
+
+<b>10. Virtual Environments:</b><br>
+Use virtual environments (e.g., venv, pipenv) to isolate project dependencies and prevent conflicts or security issues 
+from affecting other projects or the system's global Python installation.<br><br>
+</p></body></html>
