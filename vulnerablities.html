@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+<title></title>
+</head>
+<body>
+<h2 align=center><b>PYTHON SECURITY VULNERABLITIES</b></h2>
+<b>1. Injection Attacks:</b><br>
+<ul>
+<li><b>SQL Injection:</b>Occurs when unsanitized user input is directly incorporated into SQL queries, allowing attackers 
+to manipulate database operations.</li><br>
+<li><b>Command Injection:</b>Arises when user input is used in system commands without proper validation, enabling attackers
+to execute arbitrary operating system commands.</li><br>
+<li><b>Code Injection:</b>Similar to command injection, but allows for the injection and execution of malicious Python code.
+This can happen with functions like eval() if not used carefully.</li><br>
+</ul>
+<b>2. Insecure Deserialization:</b><br>
+If an application deserializes untrusted data, an attacker can craft malicious serialized objects to achieve remote code 
+execution or other attacks.<br><br>
+<b>3. Vulnerable Dependencies:</b><br>Using outdated or compromised third-party libraries and packages can introduce 
+known vulnerabilities into a Python application.<br><br>
+<b>4. Cross-Site Scripting (XSS):</b><br>In web applications, XSS can occur if user-supplied input is not properly 
+sanitized before being rendered in the browser, allowing attackers to inject client-side scripts.<br><br>
+<b>5. Broken Access Control:</b><br>Improperly configured access controls can allow unauthorized users to access or 
+modify sensitive data or functionality.<br><br>
+<b>6. Security Misconfigurations:</b><br>Weak or default configurations in frameworks, servers, or application settings 
+can create exploitable vulnerabilities.<br><br>
+<b>7. Exploited and Malicious Packages:</b><br>Malicious packages can be uploaded to public repositories (like PyPI) 
+masquerading as legitimate ones, or legitimate packages can be compromised.<br><br>
+<b>Mitigation Strategies:</b><br>
+<ul>
+<li><b>Input Validation and Sanitization:</b>Always validate and sanitize user input before using it in database queries,
+system commands, or rendering it in web pages.</li><br>
+<li><b>Secure Dependency Management:</b>Regularly audit and update third-party libraries and packages to address known vulnerabilities.
+Tools like safety or Snyk can help.</li><br>
+<li><b>Secure Coding Practices:</b>Avoid using functions like eval() with untrusted input, implement strong authentication and
+authorization, and follow secure development guidelines for chosen frameworks.</li><br>
+<li><b>Secure Configuration:</b>Configure application settings, servers, and frameworks with security best practices in
+mind.</li><br>
+<li><b>Regular Security Audits and Testing:</b>Conduct vulnerability scans, penetration testing, and code reviews to identify and
+address security weaknesses.</li><br>
+</ul>
+</p></body></html>
